@@ -8,8 +8,8 @@ if (isset($_POST) & !empty($_POST)) {
     $Email = $_POST['Email'];
     $password = $_POST['password'];
 
-    $Sql = "INSERT INTO `oday` (username , Email ,password)value($username , $Email ,$password)";
-
+    $Sql = "INSERT INTO `oday` (username , Email ,password)value('$username' , '$Email' ,'$password')";
+    echo $Sql;
     $result = mysqli_query($C, $Sql) or die (mysqli_error($C));
     
     if($result){
@@ -99,7 +99,7 @@ if (isset($_POST) & !empty($_POST)) {
             <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
             <button class="primary" type="submit">Register</button>
-            <a class="primary" href="C:\xampp\htdocs\login_System\Login.php">Login</a>
+            <a class="primary" href="Login.php">Login</a>
 
         </form>
     </center>
