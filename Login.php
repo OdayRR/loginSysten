@@ -122,7 +122,8 @@ if (isset($_SESSION['username'])) {
             <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
             <button class="primary" type="submit">Login</button>
-            <a class="primary" href="register.php">Register</a>
+            <button class="primary" type="button" onclick="location.href='register.php'">Register</button>
+            <button  class="primary" type="button" onclick="location.href='index.php'">Chat Room</button>
 
         </form>
     </center>

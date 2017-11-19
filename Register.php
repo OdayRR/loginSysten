@@ -99,7 +99,8 @@ if (isset($_POST) & !empty($_POST)) {
             <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
             <button class="primary" type="submit">Register</button>
-            <a class="primary" href="Login.php">Login</a>
+            <button class="primary" type="button" onclick="location.href='Login.php'">Login</button>
+            <button class="primary" type="button" onclick="location.href='index.php'">Chat Room</button>
 
         </form>
     </center>
